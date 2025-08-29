@@ -195,8 +195,7 @@ namespace personelApp
             }
         }
 
-       
-        
+      
             private async void btnSil_Click(object sender, EventArgs e)
         {
             if (dgvPersoneller.CurrentRow == null)
@@ -204,7 +203,6 @@ namespace personelApp
                 MessageBox.Show("Lütfen silmek için bir personel seçin.");
                 return;
             }
-
          
             var selectedRow = dgvPersoneller.CurrentRow;
             if (selectedRow.Cells["Id"].Value == null)
